@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datanla - Quầy Nhận Ảnh</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/public.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo-section">
+                <img src="https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.30808-6/387790379_840485701202951_5775669728894156441_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=5d8NdgruuNMQ7kNvwH36G2n&_nc_oc=AdnNaWY1x5lovFD003FdTDlJUE1GExMszBAWXjLxe8ha7gIK9OEMlXfkj1IoBLUvdW0&_nc_zt=23&_nc_ht=scontent.fsgn5-3.fna&_nc_gid=SOnxXtu5YWdQTooych_3XA&oh=00_Afjg1tgCjJ8H1wwPN9QUxprBzS5Qk0y81CuOtimH7j9ntg&oe=6911E57A" alt="Datanla Logo" class="logo-image">
+                <h1>DATANLA WATERFALL</h1>
+            </div>
+            <div class="header-right">
+                <div class="update-time">
+                    <i class="fa-solid fa-clock"></i>
+                    <span id="lastUpdate">Đang tải...</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- <div class="search-section">
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="searchInput" placeholder="Nhập mã ảnh để tra cứu (P-...)">
+            <button id="clearSearch" class="btn-clear-search hidden">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+    </div> -->
+
+    <main class="main-content">
+        <section class="ready-section">
+            <div class="section-header">
+                <h2>
+                    <i class="fa-solid fa-circle-check"></i>
+                    ẢNH ĐÃ SẴN SÀNG
+                </h2>
+                <div class="count-badge" id="readyCount">0</div>
+            </div>
+            <div class="photos-grid" id="readyGrid">
+                <div class="empty-state">
+                    <i class="fa-solid fa-inbox"></i>
+                    <p>Chưa có ảnh sẵn sàng</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="printing-section">
+            <div class="section-header">
+                <h2>
+                    <i class="fa-solid fa-print"></i>
+                    ĐANG IN
+                </h2>
+                <div class="count-badge" id="printingCount">0</div>
+            </div>
+            <div class="printing-list" id="printingList">
+                <div class="empty-state">
+                    <i class="fa-solid fa-inbox"></i>
+                    <p>Không có ảnh đang in</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p><i class="fa-solid fa-ticket"></i> Vui lòng mang mã ảnh đến quầy để nhận</p>
+        <p><i class="fa-solid fa-phone"></i> Hỗ trợ: 0123-456-789</p>
+    </footer>
+
+    <div class="connection-status hidden" id="connectionStatus">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <span>Loading...</span>
+    </div>
+
+    <script src="js/public.js"></script>
+</body>
+</html>

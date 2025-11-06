@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datanla - Đăng nhập</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <div class="logo-section">
+                    <img src="https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.30808-6/387790379_840485701202951_5775669728894156441_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=5d8NdgruuNMQ7kNvwH36G2n&_nc_oc=AdnNaWY1x5lovFD003FdTDlJUE1GExMszBAWXjLxe8ha7gIK9OEMlXfkj1IoBLUvdW0&_nc_zt=23&_nc_ht=scontent.fsgn5-3.fna&_nc_gid=SOnxXtu5YWdQTooych_3XA&oh=00_Afjg1tgCjJ8H1wwPN9QUxprBzS5Qk0y81CuOtimH7j9ntg&oe=6911E57A" alt="Datanla Logo" class="logo-image">
+                    <div class="logo-text">
+                        <h1>DATANLA</h1>
+                        <span class="tagline">WATERFALL</span>
+                    </div>
+                </div>
+                <h2>Đăng nhập hệ thống</h2>
+                <p>Vui lòng đăng nhập để tiếp tục</p>
+            </div>
+
+            <form class="login-form" id="loginForm">
+                <div class="form-group">
+                    <label for="username">
+                        <i class="fa-solid fa-user"></i>
+                        Tên đăng nhập
+                    </label>
+                    <input 
+                        type="text" 
+                        id="username" 
+                        name="username" 
+                        placeholder="Nhập tên đăng nhập"
+                        required
+                        autocomplete="username">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">
+                        <i class="fa-solid fa-lock"></i>
+                        Mật khẩu
+                    </label>
+                    <div class="password-input">
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            placeholder="Nhập mật khẩu"
+                            required
+                            autocomplete="current-password">
+                        <button type="button" class="toggle-password" id="togglePassword">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" id="rememberMe" name="rememberMe">
+                        <span>Ghi nhớ đăng nhập</span>
+                    </label>
+                    <a href="#" class="forgot-password">Quên mật khẩu?</a>
+                </div>
+
+                <button type="submit" class="btn-login">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    Đăng nhập
+                </button>
+            </form>
+
+            <div class="login-footer">
+                <p><i class="fa-solid fa-shield-halved"></i> Hệ thống quản lý Datanla Photobooth</p>
+            </div>
+        </div>
+
+        <div class="version-info">
+            <span>Version 1.0.0</span>
+        </div>
+    </div>
+
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

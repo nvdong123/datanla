@@ -1,0 +1,13 @@
+{
+  "name": "datanla-photobooth-pickup",
+  "version": "1.0.0",
+  "description": "Photo pickup counter display system",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  }
+}
