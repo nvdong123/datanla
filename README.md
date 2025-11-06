@@ -57,14 +57,14 @@ Hoặc:
 node server.js
 ```
 
-Server sẽ khởi động tại `http://localhost:3000`
+Server sẽ khởi động tại `http://localhost:3002`
 
 Bạn sẽ thấy thông báo:
 ```
-Server running on http://localhost:3000
-Public Display: http://localhost:3000/public.html
-Staff Dashboard: http://localhost:3000/staff.html
-Login Page: http://localhost:3000/login.html
+Server running on http://localhost:3002
+Public Display: http://localhost:3002/public.html
+Staff Dashboard: http://localhost:3002/staff.html
+Login Page: http://localhost:3002/login.html
 ```
 
 ### Dừng server
@@ -77,9 +77,9 @@ Nhấn `Ctrl + C` trong terminal đang chạy server
 
 | Trang | URL | Mô tả |
 |-------|-----|-------|
-| **Màn hình công khai** | http://localhost:3000/public.html | Hiển thị cho khách hàng |
-| **Đăng nhập** | http://localhost:3000/login.html | Đăng nhập nhân viên |
-| **Quản lý** | http://localhost:3000/staff.html | Dashboard quản lý (cần đăng nhập) |
+| **Màn hình công khai** | http://localhost:3002/public.html | Hiển thị cho khách hàng |
+| **Đăng nhập** | http://localhost:3002/login.html | Đăng nhập nhân viên |
+| **Quản lý** | http://localhost:3002/staff.html | Dashboard quản lý (cần đăng nhập) |
 
 ---
 
@@ -152,9 +152,9 @@ Nhấn `Ctrl + C` trong terminal đang chạy server
 
 Mở `server.js`, tìm dòng:
 ```javascript
-const PORT = 3000;
+const PORT = 3002;
 ```
-Thay `3000` thành port mong muốn.
+Thay `3002` thành port mong muốn.
 
 ### Thay đổi tài khoản đăng nhập
 
@@ -205,8 +205,8 @@ datanla-photobooth-pickup/
 ### Lỗi: "npm is not recognized"
 ➡️ Node.js chưa được thêm vào PATH. Cài lại Node.js và chọn "Add to PATH"
 
-### Lỗi: "Port 3000 is already in use"
-➡️ Port 3000 đang bị chiếm dụng. Đổi port trong `server.js` hoặc tắt ứng dụng đang dùng port 3000
+### Lỗi: "Port 3002 is already in use"
+➡️ Port 3002 đang bị chiếm dụng. Đổi port trong `server.js` hoặc tắt ứng dụng đang dùng port 3002
 
 ### Lỗi: "Cannot find module 'express'"
 ➡️ Chạy lại `npm install`

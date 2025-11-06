@@ -4,7 +4,7 @@ const fs = require('fs').promises;
 const path = require('path');
 
 const app = express();
-const PORT = 3000;
+const PORT = 3002;
 const DATA_FILE = path.join(__dirname, 'data.json');
 
 app.use(cors());
@@ -59,7 +59,7 @@ function addLog(photo, action, message) {
 
 // Helper: Simulate printing
 async function simulatePrinting(photoId) {
-  const delay = Math.floor(Math.random() * 12000) + 3000; // 3-15s
+  const delay = Math.floor(Math.random() * 12000) + 3002; // 3-15s
   
   await new Promise(resolve => setTimeout(resolve, delay));
   

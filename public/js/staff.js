@@ -3,7 +3,7 @@ if (!sessionStorage.getItem('isAuthenticated')) {
     window.location.href = 'login.html';
 }
 
-const API_BASE = 'http://localhost:3000';
+const API_BASE = 'http://localhost:3002';
 let photos = [];
 let eventSource = null;
 let pollInterval = null;
@@ -125,7 +125,7 @@ function connectSSE() {
             if (!eventSource || eventSource.readyState === EventSource.CLOSED) {
                 connectSSE();
             }
-        }, 3000);
+        }, 3002);
     };
 }
 
