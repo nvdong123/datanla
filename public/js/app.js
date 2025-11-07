@@ -244,14 +244,14 @@ async function performFaceScan(imageData) {
 
 function generateMockPhotos() {
     const photos = [];
-    const colors = ['#1e3a5f', '#00D9FF', '#00ff88', '#2c5282', '#0099cc', '#00cc66'];
     
     for (let i = 1; i <= 6; i++) {
-        const svg = `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='400'%3E%3Cdefs%3E%3ClinearGradient id='g${i}' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:${colors[i-1]};stop-opacity:1'/%3E%3Cstop offset='100%25' style='stop-color:${colors[i-1]};stop-opacity:0.6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23g${i})' width='300' height='400'/%3E%3Ccircle cx='150' cy='150' r='60' fill='rgba(255,255,255,0.2)'/%3E%3Ccircle cx='135' cy='140' r='10' fill='white'/%3E%3Ccircle cx='165' cy='140' r='10' fill='white'/%3E%3Cpath d='M 130 170 Q 150 185 170 170' stroke='white' fill='none' stroke-width='3' stroke-linecap='round'/%3E%3Ctext x='150' y='350' font-family='Arial' font-size='32' font-weight='bold' fill='white' text-anchor='middle'%3EIMG-${String(i).padStart(3,'0')}%3C/text%3E%3C/svg%3E`;
+        // Sử dụng ảnh demo từ thư mục assets/images
+        const imageUrl = `/assets/images/demo${i}.svg`;
         
         photos.push({
             id: `IMG_${String(i).padStart(3,'0')}`,
-            url: svg,
+            url: imageUrl,
             score: (0.95 - (i-1) * 0.05).toFixed(2),
             price: CONFIG.PRICE_PER_PHOTO
         });
